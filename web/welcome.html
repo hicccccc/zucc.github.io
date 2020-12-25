@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div>
+        <span id="chinese">浙大城市学院</span>
+        <span id="english">Zhejiang University City College</span>
+    </div>
+</body>
+<style>
+    #english{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 8vmax;
+    font-family: 'index';
+    z-index: 1;
+    cursor: pointer;
+}
+    #chinese{
+    position: absolute;
+    width: 80%;
+    left: 40%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 10vmax;
+    font-family: 'index';
+    z-index: 1;
+    cursor: pointer;
+}
+span{
+    background-image: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flow 60s infinite;
+}
+@keyframes flow{
+    100%{
+        background-position: -400% 0;
+    }
+}
+@font-face{
+    font-family: 'index';
+    src:url('../font/index.TTF');
+} 
+</style>
+</html>
