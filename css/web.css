@@ -1,39 +1,58 @@
-body{
+body {
     background-color: transparent;
     text-align: left;
     font-size: 10vmax;
     color: white;
     font-family: 'index';
-    position: absolute; 
+    position: absolute;
     left: 0;
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
 body::-webkit-scrollbar {
-display: none;
+    display: none;
 }
-.mode{
+
+body::-moz-scrollbar {
+    display: none;
+}
+
+body::-ms-scrollbar {
+    display: none;
+}
+
+body::-o-scrollbar {
+    display: none;
+}
+
+.mode {
     width: 50%;
     height: 50%;
     float: left;
     text-align: center;
 }
-p{
+
+p {
     cursor: pointer;
-    background-image: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
     background-size: 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: flow 60s infinite;
 }
-a{
+
+a {
     text-decoration: none;
 }
-@keyframes flow{
-100%{
-    background-position: -400% 0;
+
+@keyframes flow {
+    100% {
+        background-position: -400% 0;
+    }
 }
+
+@font-face {
+    font-family: 'index';
+    src: url('../font/index.TTF');
 }
-@font-face{
-font-family: 'index';
-src:url('../font/index.TTF');}
